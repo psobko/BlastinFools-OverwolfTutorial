@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+	<head> 
+		<link rel="stylesheet" href="style.css" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Demo app</title>
+	</head>
+	<body>
+		<div class="resizeGrip" id="resizeGripTopLeft" onmousedown="dragResize('TopLeft');"></div>
+		<div class="resizeGrip" id="resizeGripTop" onmousedown="dragResize('Top');"></div>
+		<div class="resizeGrip" id="resizeGripTopRight" onmousedown="dragResize('TopRight');"></div>
+		<div class="resizeGrip" id="resizeGripRight" onmousedown="dragResize('Right');"></div>
+		<div class="resizeGrip" id="resizeGripBottomRight" onmousedown="dragResize('BottomRight');"></div>
+		<div class="resizeGrip" id="resizeGripBottom" onmousedown="dragResize('Bottom');"></div>
+		<div class="resizeGrip" id="resizeGripBottomLeft" onmousedown="dragResize('BottomLeft');"></div>
+		<div class="resizeGrip" id="resizeGripLeft" onmousedown="dragResize('Left');"></div>
+		<div id="content" onmousedown="dragMove();">
+<h1 id="usernameContainer">Hello, unknown user!</h1>
+			<p>You can drag from anywhere you want, and resize from the edges.</p>
+			<button id="close" onclick="closeWindow();">Close</button>
+			<button id="run-teamspeak" onclick="runTeamSpeak();">Run TeamSpeak</button>
+			<button onclick="takeScreenshot();">Take Screenshot</button>
+			<img id="screenshot" width="300px"></img>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
